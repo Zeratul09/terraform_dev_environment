@@ -1,9 +1,5 @@
 # **Terraform Development Environment**
 
-This is purely a "learning and applying what I've learned in practice" project.
-
-*(You can find the details about my learnings and objectives below the "important notes" section)*
-
 ### **Description:**
 This Infrastructure as a Code (IaaC) project will deploy a small dev environment on AWS using Terraform. The deployed node (ubuntu 18.04) will be accesible via SSH and it will have Docker installed by default.
 
@@ -18,6 +14,7 @@ To use this code ideally you should have: the AWS SDK extension for VSC and the 
 Additionally edit the code the following way:
 - In the providers.tf file at line 15 and 16: provide your own access and secret access key for the AWS Cloud.
 - In the main.tf file at line 75 ("resource "aws_security_group" "botlane_sg" {)" provide your IP address(s) instead of the "???".
+- In "windows-ssh-config.tpl" edit the path (or add your own username)
 
 ---------
 ### **Learnings and Details:**
