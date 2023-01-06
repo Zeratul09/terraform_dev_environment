@@ -146,7 +146,7 @@ resource "aws_instance" "dev_node" {
 #Twelveth, after running terraform apply we will connect to our node.
 #By using first terraform state list, locate our instance, and then running terraform state show "resource" copy the public IP.
 #Finally, run ssh -i "path to our generated auth key" ubuntu@"IPADDRESS" (Run this twice, as it could be that first time you would get "Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-#Warning: Permanently added '15.188.246.152' (ED25519) to the list of known hosts."
+#Warning: Permanently added '???.???.???.???' (ED25519) to the list of known hosts."
 #Finally, being on the host you can start running for example docker commands: docker --version
 #(Go up for step Thirteen)
 
